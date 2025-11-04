@@ -97,13 +97,13 @@ ingress:
 ## 🧹 Security Practices
 
 - Cloudflared/ is git-ignored to protect secrets
+- Enable HTTPS-only mode in Cloudflare for full encryption.
 - Real credentials and tunnel IDs stay local
 - Security-headers.conf adds standard protections:
   - X-Content-Type-Options: nosniff
   - X-Frame-Options: DENY
   - Referrer-Policy: strict-origin-when-cross-origin
   - Permissions-Policy: camera=(), microphone=(), geolocation=()
-Enable HTTPS-only mode in Cloudflare for full encryption.
 
 ---
 
