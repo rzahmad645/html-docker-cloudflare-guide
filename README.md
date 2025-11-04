@@ -1,11 +1,11 @@
-#🌐 HTML + Docker + Cloudflare — Static Site Deployment Guide
+# 🌐 HTML + Docker + Cloudflare — Static Site Deployment Guide
 
 A lightweight and secure setup for deploying a static HTML/CSS website using Docker and a Cloudflare Tunnel, with a domain managed through Cloudflare.
 This guide demonstrates how to containerize and serve your site with Nginx, keeping your setup minimal, portable, and production-ready.
 
 ---
 
-##🚀 Overview
+## 🚀 Overview
 
 This project shows how to:
 - Serve static HTML/CSS files through an Nginx container.
@@ -15,7 +15,7 @@ This project shows how to:
 
 ---
 
-##🧱 Project Structure
+## 🧱 Project Structure
 ```
 .
 ├── compose.yaml              # Docker Compose configuration
@@ -56,7 +56,7 @@ CLOUDFLARE_TUNNEL_ID=00000000-0000-0000-0000-000000000000
 
 ---
 
-##▶️ Build and Run with Docker
+## ▶️ Build and Run with Docker
 
 # 1  Build and start
 docker compose up -d --build
@@ -69,7 +69,7 @@ docker compose down
 
 ---
 
-##🌩️ Connect Your Cloudflare Domain
+## 🌩️ Connect Your Cloudflare Domain
 
 Open Cloudflare → Zero Trust → Access → Tunnels
 
@@ -94,7 +94,7 @@ ingress:
 
 ---
 
-##🧹 Security Practices
+## 🧹 Security Practices
 
 - Cloudflared/ is git-ignored to protect secrets
 - Real credentials and tunnel IDs stay local
@@ -107,7 +107,7 @@ Enable HTTPS-only mode in Cloudflare for full encryption.
 
 ---
 
-##🧠 Troubleshooting
+## 🧠 Troubleshooting
 ```
 | Issue                 | Fix                                                          |
 | --------------------- | ------------------------------------------------------------ |
@@ -118,14 +118,14 @@ Enable HTTPS-only mode in Cloudflare for full encryption.
 ```
 ---
 
-##✅ Result
+## ✅ Result
 
 Your HTML/CSS site runs via Nginx + Docker, served safely through Cloudflare Tunnel.
 The setup is portable, lightweight, and free of secrets.
 
 ---
 
-##📄 License
+## 📄 License
 
 Licensed under the MIT License — see LICENSE.
 
