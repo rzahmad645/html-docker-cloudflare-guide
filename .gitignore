@@ -144,9 +144,30 @@ cloudflared/cert.pem
 cloudflared/*.json
 cloudflared/*.yml
 cloudflared/*.yaml
+
 # keep example files if you add them
 !cloudflared/config.example.yml
 !cloudflared/README.md
+
+# Explicit: real Cloudflared configs/creds (never commit)
+cloudflared/config.yml
+cloudflared/credentials.json
+cloudflared/cert.pem
+
+# Compose overrides / local variants
+docker-compose.override.yml
+docker-compose.local.yml
+compose.override.yaml
+compose.local.yaml
+compose.*.local.yaml
+
+# Local-only config variants
+*.local.*
+*.bak
+*.backup
+*.tmp
+*.temp
+*~ 
 
 # Generic key/cert files
 *.pem
