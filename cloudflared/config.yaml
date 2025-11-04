@@ -1,0 +1,13 @@
+tunnel: <YOUR_TUNNEL_ID>  # e.g., 12345678-abcd-ef01-2345-6789abcdef01
+credentials-file: /home/nonroot/.cloudflared/<YOUR_TUNNEL_ID>.json
+
+ingress:
+  - hostname: <YOUR_DOMAIN>  # e.g., example.com
+    service: http://web:80
+  - service: http_status:404
+    # optional:
+  - hostname: <YOUR_DOMAIN> # e.g., example.com
+    service: http://web:80
+
+    # Catch-all
+  - service: http_status:404
