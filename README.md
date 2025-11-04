@@ -83,7 +83,7 @@ Run docker compose up -d
 
 Your site is now live at your Cloudflare domain
 
-##Example safe config to commit as cloudflared/config.example.yml:
+## Example safe config to commit as cloudflared/config.example.yml:
 
 tunnel: <TUNNEL-NAME>
 credentials-file: /etc/cloudflared/credentials.json  # never commit real file
