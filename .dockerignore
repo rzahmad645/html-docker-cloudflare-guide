@@ -1,0 +1,105 @@
+# -----------------------------
+# VCS
+# -----------------------------
+.git
+.gitignore
+
+# -----------------------------
+# Node / Next.js build artifacts
+# -----------------------------
+**/node_modules/
+.next
+out
+dist
+build
+.cache
+
+# -----------------------------
+# Logs and debug files
+# -----------------------------
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# -----------------------------
+# Docker / Compose
+# -----------------------------
+# If you never COPY these into images, keep these ignores:
+docker-compose*.yml
+compose*.yml
+Dockerfile*
+!Dockerfile                # Keep primary Dockerfile if needed in image context
+
+# Optional: common local/override variants
+docker-compose.override.yml
+docker-compose.local.yml
+compose.override.yaml
+compose.local.yaml
+compose.*.local.yaml
+
+# -----------------------------
+# Git & IDE files
+# -----------------------------
+.vscode
+.vs
+.settings
+.project
+.classpath
+
+# -----------------------------
+# Temporary / tooling files
+# -----------------------------
+*.dbmdl
+*.jfm
+charts
+obj
+toolstarget
+*.user
+*.bak
+*.backup
+*.tmp
+*.temp
+*~
+
+# -----------------------------
+# Local environment & secrets
+# -----------------------------
+.env
+.env.*
+.envrc
+.npmrc
+.ssh/
+# Generic key/cert files
+*.pem
+*.key
+*.crt
+*.pfx
+# Common private keys (SSH, TLS) by name pattern
+**/id_*
+
+# -----------------------------
+# Cloudflared (never needed in image context)
+# -----------------------------
+cloudflared/
+# (allow example docs if you want to ship them with image)
+!cloudflared/config.example.yml
+!cloudflared/README.md
+
+# -----------------------------
+# Misc (docs) — OPTIONAL
+# If you *never* COPY docs into images, keep these ignores.
+# If you sometimes COPY READMEs or LICENSE into images (e.g., for /usr/share/doc),
+# remove these lines.
+# -----------------------------
+# LICENSE
+# README.md
+# *.md
+# *.txt
+
+# -----------------------------
+# OS junk
+# -----------------------------
+.DS_Store
+Thumbs.db
